@@ -47,7 +47,29 @@ end
 group :production do
   gem 'mysql2'
 end
+#add
+gem 'nokogiri' #解析复杂的 HTML 结构
+gem 'faraday' #HTTP的客户端
 gem 'devise'
+gem 'activeadmin', github: 'activeadmin'  #admin
+gem 'ransack' #搜索
+gem 'kaminari' #分页
+gem 'sidekiq' #计划任务
+gem 'carrierwave' #上传
+gem 'simple_form' #表单
+gem 'grape' #快速的构建和 Rails 完美融合的 API 接口
+gem 'cancancan' #加入操作权限控制
+gem 'delayed_job_active_record'
+gem 'whenever', :require => false
+gem "better_errors"
+
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
+
+gem 'factory_girl_rails' #数据工厂
+gem 'rspec-rails'
+
 
 gem 'mina'
 gem 'puma'
